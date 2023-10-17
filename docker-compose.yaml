@@ -1,0 +1,14 @@
+version: '3.9'
+  #volumes:
+  #  config: null
+  #  monitor: null
+
+services:
+  stund:
+    build: .
+    network_mode: host
+    volumes:
+      - ./stund/:/opt/stund
+        #command: ls -lah /opt/stund/
+    command: /opt/stund/start.sh
+      #    restart: always
