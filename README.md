@@ -14,7 +14,7 @@ Referência para instalação: https://docs.docker.com/install/
 1) Utilizar o comando docker-compose para o start do container
 
 ```
-docker-compose up
+docker-compose up -d
 ```
 
 **Dicas:**
