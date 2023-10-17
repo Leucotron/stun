@@ -13,7 +13,7 @@ then
 	echo "Não foi encontrada a segunda interface de rede"
 else
 	IP1=$(ifconfig  ${IF1} | grep inet | awk '{print $2}')
-	IP1=$(ifconfig  ${IF2} | grep inet | awk '{print $2}')
+	IP2=$(ifconfig  ${IF2} | grep inet | awk '{print $2}')
 	if [ "$IP1" = "" ]
 	then
 		echo "Não foi encontrado nenhum IP atribuido a interface $IF1"
